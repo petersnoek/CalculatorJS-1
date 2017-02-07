@@ -10,23 +10,57 @@
 		
 		<!--Display-->
 		<div id="display"> 
-			Display 
+			
+			
+			
+			
+		</div>
+		
+		<div id="uitkomst"> 
+			uitkomst 
 			
 			
 			
 		</div>
 		
 		<button onclick="Add5()" onmouseover="over()"> 5 </button>
+		<button onclick="Add3()"> 3 </button>
+		<button onclick="Plus()"> + </button>
+		<button onclick="Calculate()"> = </button>
+		
 		
 		<script>
+		
+			var getal1=0;
+			
 			function Add5(){
 				
-				var display = document.getElementById('display').innerHTML = 5;
+				var display = document.getElementById('display').innerHTML += '5';
 				
 			}
-			function over(){
-				var display = document.getElementById('display').innerHTML = 5;
+			
+			
+			function Add3(){
+				
+				var display = document.getElementById('display').innerHTML += '3';
+				
 			}
+			
+			function Plus(){
+				getal = parseInt(document.getElementById('display').innerHTML = '');
+				document
+			}
+			
+			function Calculate(){
+				var getalInDisplay = parseInt(document.getElementById('display').innerHTML);
+				var uitkomst = getal1 + getalInDisplay;
+				
+				document.getElementById('uitkomst').innerHTML = uitkomst;
+			}
+			/*
+			function over(){
+				var display = document.getElementById('display').innerHTML += '5';
+			*/
 		</script>
 		
 	</body>
